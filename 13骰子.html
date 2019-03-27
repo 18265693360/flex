@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .parent{
+            display: flex;
+            justify-content: space-between;
+
+            /*display: flex;*/
+            /*flex-direction: column;*/
+            /*justify-content: space-around;*/
+
+            width: 400px;
+            height: 400px;
+            border: 5px solid #000;
+            border-radius: 8px;
+            margin:50px auto;
+            /*外面大框圆角*/
+        }
+        .box1{
+            display: flex;
+
+            /*交叉轴居中  水平居中*/
+            justify-content: center;
+
+            /*垂直居中*/
+            align-items: center;
+        }
+        .point{
+            width: 100px;
+            height: 100px;
+            background: #00ffff;
+            border-radius: 50%;
+            /*中间小点的圆角属性*/
+        }
+        .box2{
+            justify-content: space-around;
+        }
+        .point:nth-child(1){
+            align-self: flex-start;
+        }
+        .point:nth-child(2){
+            align-self: center;
+        }
+        .point:nth-child(3){
+            align-self: flex-end;
+        }
+
+        .first,.second{
+            display: flex;
+            justify-content: space-around;
+            /*环绕*/
+        }
+
+        .first,.third{
+            display: flex;
+            justify-content: space-around;
+        }
+        .second{
+            display: flex;
+            justify-content: center;
+        }
+
+        .first,.second{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent box1">
+        <div class="point"></div>
+    </div>
+
+    <div class="parent box2">
+        <div class="point"></div>
+        <div class="point"></div>
+    </div>
+
+    <div class="parent box3">
+        <div class="point"></div>
+        <div class="point"></div>
+        <div class="point"></div>
+    </div>
+
+    <div class="parent box4">
+        <div class="first">
+            <div class="point"></div>
+            <div class="point"></div>
+        </div>
+        <div class="second">
+            <div class="point"></div>
+            <div class="point"></div>
+        </div>
+    </div>
+
+    <div class="parent box5">
+        <div class="first">
+            <div class="point"></div>
+            <div class="point"></div>
+        </div>
+        <div class="second">
+            <div class="point"></div>
+        </div>
+        <div class="third">
+            <div class="point"></div>
+            <div class="point"></div>
+        </div>
+    </div>
+
+    <div class="parent box6">
+        <div class="first">
+            <div class="point"></div>
+            <div class="point"></div>
+            <div class="point"></div>
+        </div>
+        <div class="second">
+            <div class="point"></div>
+            <div class="point"></div>
+            <div class="point"></div>
+        </div>
+
+    </div>
+</body>
+</html>

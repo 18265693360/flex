@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .parent{
+            width: 500px;
+            height: 400px;
+            display: flex;
+            margin: 50px auto;
+            border: 1px solid #000;
+        }
+        .child{
+            /*flex-grow 大于1就会填满行*/
+            flex-grow: 2;
+            width: 100px;
+            height: 100px;
+            background: #ff00ff;
+            border: 1px solid #000;
+            box-sizing:border-box;
+        }
+        .child:nth-child(1){
+            flex-basis: 200px;
+            /*扩充到200px*/
+        }
+        /*项目1 200px*/
+        /*项目2 100px*/
+        /*项目3 100px*/
+       /*剩余100px*/
+        /*100/6=16.6666  每个项目扩大两份 flex-grow 所以一共六份*/
+
+    </style>
+
+</head>
+<body>
+<!--flex-basis 项目该多大就多大 该多宽就多宽-->
+    <div class="parent">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+    </div>
+</body>
+</html>

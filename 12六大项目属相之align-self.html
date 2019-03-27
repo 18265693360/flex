@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .parent{
+            width: 500px;
+            height: 300px;
+            margin: 50px auto;
+            display: flex;
+            align-items: center;
+            border: 1px solid #ffff00;
+        }
+        .child{
+            width: 100px;
+            /*height: 100px;*/
+            background: deepskyblue;
+            border: 1px solid #ffb400;
+            box-sizing:border-box;
+        }
+        .child:first-child{
+            /*align-self: ; 控制其中一个元素*/
+            /*align-self: flex-start;子元素一在最上*/
+            /*align-self: flex-end;子元素在最下*/
+            align-self: stretch;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+    </div>
+</body>
+</html>

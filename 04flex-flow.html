@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            display: flex;
+            /*flex-wrap: wrap-reverse;*/
+
+            /*复合属性*/
+
+            /*作用*/
+            /*让弹性盒的元素以相反的顺序显示，且在必要的时候进行拆行：*/
+
+            /*display:flex;*/
+            /*flex-flow:row-reverse wrap;*/
+
+            /*flex-flow 属性是 flex-direction 和 flex-wrap 属性的复合属性。*/
+
+            /*flex-flow 属性用于设置或检索弹性盒模型对象的子元素排列方式。*/
+
+            /*flex-direction 属性规定灵活项目的方向。*/
+
+            /*flex-wrap 属性规定灵活项目是否拆行或拆列。*/
+
+            /*注意：如果元素不是弹性盒对象的元素，则 flex-flow 属性不起作用。*/
+            flex-flow: row-reverse wrap;
+
+        /*{*/
+            /*flex-direction: row ;*/
+                    /*row-reverse*/
+                    /*column*/
+                    /*column-reverse*/
+                    /*initial*/
+                    /*inherit*/
+            /*flex-wrap:nowrap;*/
+                    /*wrap*/
+                    /*wrap-reverse*/
+                    /*initial*/
+                    /*inherit*/
+        /*}*/
+
+
+            margin: 50px auto;
+            border: 1px solid #ffff00;
+            width: 1000px;
+            height: 500px;
+        }
+        .box{
+            background: deepskyblue;
+            width: 200px;
+            height: 50px;
+            border: 1px solid #ff0000;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+    <div class="box">6</div>
+    <div class="box">7</div>
+    <div class="box">8</div>
+    <div class="box">9</div>
+    <div class="box">10</div>
+</div>
+</body>
+</html>

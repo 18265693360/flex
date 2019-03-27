@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .parent {
+            margin: 50px auto;
+            display: flex;
+            flex-wrap: wrap;
+
+
+            width: 500px;
+            height: 300px;
+            border: 1px solid #000;
+        }
+        .child {
+            width: 100px;
+            /*height: 100px;*/
+            background: #f00;
+            border: 1px solid #000;
+        }
+        .child:nth-child(1){
+            order:8;
+        }
+        .child:nth-child(3){
+            order: 0;
+        }
+        .child:nth-child(4){
+            order: 2;
+        }
+        /*order属性定义项目的排列顺序。
+        数值越小，排列越靠前，
+        数值越大，排列越靠后，
+        默认为0*/
+    </style>
+</head>
+<body>
+<div class="parent">
+    <div class="child">1</div>
+    <div class="child">2</div>
+    <div class="child">3</div>
+    <div class="child">4</div>
+    <div class="child">5</div>
+    <div class="child">6</div>
+    <div class="child">7</div>
+    <div class="child">8</div>
+</div>
+</body>
+</html>
